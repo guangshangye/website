@@ -63,35 +63,19 @@
   </style>
 </head>
 <body>
-
   <h1>诚挚邀请您参加我们的婚礼</h1>
 
   <div class="video-container">
-    <video id="weddingVideo" playsinline controls autoplay>
-      <source src="your-video.mp4" type="video/mp4" />
-      //您的浏览器不支持视频播放
-    </video>
+    <iframe 
+      src="https://player.bilibili.com/player.html?bvid=BV1W92VYTEh5&page=1" 
+      scrolling="no" 
+      frameborder="no" 
+      allowfullscreen="true"
+      style="width:100%; height:100%;">
+    </iframe>
   </div>
 
-  <a id="rsvpBtn" class="btn" href="https://www.wjx.cn/vm/Q6J6w87.aspx" target="_blank">点击填写出席问卷</a>
-
-  <script>
-    const video = document.getElementById('weddingVideo');
-    const rsvpBtn = document.getElementById('rsvpBtn');
-    const rsvpUrl = 'https://www.wjx.cn/vm/Q6J6w87.aspx';
-
-    // 视频结束后自动跳转
-    video.addEventListener('ended', () => {
-      // 直接跳转页面
-      window.location.href = rsvpUrl;
-    });
-
-    // 尝试自动播放失败时，显示按钮让用户手动点击
-    video.addEventListener('pause', () => {
-      if (video.currentTime > 0 && !video.ended) {
-        rsvpBtn.style.display = 'inline-block';
-      }
-    });
-  </script>
+  <a class="btn" href="https://wj.qq.com/s/xxxxxxxx" target="_blank">点击填写出席问卷</a>
 </body>
+
 </html>
